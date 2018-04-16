@@ -5,18 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-        body {
-            font-family: "Tiempos Text", "Minoan Pro";
-            margin: 75px auto;
-            width: 60ch;
-            font-size: 1.4vw;
-            line-height: 2vw;
-        }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Tiempos Text', sans-serif;
+  background: #EAEAEA;
+  color: #333;
+}
+
+content {
+    padding: 0 1em;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+pre {
+  font-size: 12px;
+  padding: 10px;
+  background: white;
+  border: solid 1px #777;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border: 1px solid #666;
+}
+
+td, th {
+  padding: 0.25rem .5rem;
+  border: 1px solid #666;
+}
+
+/* Smallest possible font-size */
+html {
+  font-size: 14px;
+  line-height: 1.25em;
+}
+
+/* Font-size between 320 and 1024 */
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(.9vw + 14px);
+    line-height: calc(.9vw + 1em); /* Not working */
+  }
+}
+
+/* Maximum font-size */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+}
+
+/* Multiple properties with same values */
+h1, h2, h3, h4, h5 {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+@media screen and (min-width: 20rem) {
+  h1, h2, h3, h4, h5 {
+    padding-top: calc(1vw - 0.2rem);
+    padding-bottom: calc(1vw - 0.2rem);
+  }
+}
+@media screen and (min-width: 70rem) {
+  h1, h2, h3, h4, h5 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
     </style>
     <title>Pichon, de sermone amatorio (1902)</title>
 </head>
 
 <body>
-    Lorem, ipsum dolor sit amet adipisicing elit. Tenetur dignissimos, voluptatibus rem nostrum, amet quod inventore vel incidunt ipsa exercitationem, totam est sint temporibus ducimus magnam. Ad dicta, est qui tenetur, minus debitis perspiciatis aliquid reprehenderit corrupti eveniet cupiditate repellendus officia itaque nihil inventore. Esse placeat nostrum sunt! Ea dolore voluptas beatae minus fugiat, reprehenderit ducimus est atque velit inventore at, maiores sapiente cum nemo, hic nulla aperiam debitis earum. Nesciunt iste impedit dolores hic ex cupiditate facere est vero nulla tempore in, accusamus possimus aliquam perferendis repudiandae quod earum voluptates, vitae quibusdam quis veniam maiores debitis quos. Iure, odit nisi distinctio qui optio, consequatur, obcaecati voluptate neque quisquam accusamus suscipit hic earum enim cumque! Temporibus dolorem odit aspernatur saepe suscipit cupiditate quos ex voluptas labore voluptate totam sint, voluptatibus dolore quibusdam at quae ullam repellat voluptatem impedit earum debitis nostrum distinctio. Saepe autem sint beatae. Autem voluptatibus nostrum obcaecati, officiis ea quidem. Eum, pariatur animi doloremque aperiam cumque corporis quo eveniet eaque in consequatur saepe ipsa similique eius accusantium excepturi exercitationem facere! Ut, nulla eos maiores explicabo natus vel tempore deleniti rem, consequuntur dolores accusantium consequatur inventore totam consectetur praesentium tempora voluptate, facere officiis aperiam! Illum.
+    <content>
+        <h1>Pichon, <i>de sermone amatorio</i>, (1902)</h1>
+        <p>Lorem, ipsum dolor sit amet adipisicing elit. Tenetur dignissimos, voluptatibus rem nostrum, amet quod inventore vel incidunt ipsa exercitationem, totam est sint temporibus ducimus magnam. Ad dicta, est qui tenetur, minus debitis perspiciatis aliquid reprehenderit corrupti eveniet cupiditate repellendus officia itaque nihil inventore. Esse placeat nostrum sunt! Ea dolore voluptas beatae minus fugiat, reprehenderit ducimus est atque velit inventore at, maiores sapiente cum nemo, hic nulla aperiam debitis earum. Nesciunt iste impedit dolores hic ex cupiditate facere est vero nulla tempore in, accusamus possimus aliquam perferendis repudiandae quod earum voluptates, vitae quibusdam quis veniam maiores debitis quos. Iure, odit nisi distinctio qui optio, consequatur, obcaecati voluptate neque quisquam accusamus suscipit hic earum enim cumque! Temporibus dolorem odit aspernatur saepe suscipit cupiditate quos ex voluptas labore voluptate totam sint, voluptatibus dolore quibusdam at quae ullam repellat voluptatem impedit earum debitis nostrum distinctio. Saepe autem sint beatae. Autem voluptatibus nostrum obcaecati, officiis ea quidem. Eum, pariatur animi doloremque aperiam cumque corporis quo eveniet eaque in consequatur saepe ipsa similique eius accusantium excepturi exercitationem facere! Ut, nulla eos maiores explicabo natus vel tempore deleniti rem, consequuntur dolores accusantium consequatur inventore totam consectetur praesentium tempora voluptate, facere officiis aperiam! Illum.</p>
+    </content>
 </body>
 </html>
