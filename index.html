@@ -9,8 +9,8 @@
 :root {
   --minfont: 16px;
   --maxfont: 24px;
-  --minview: size;
-  --maxview: size;
+  --minview: 480px;
+  --maxview: 1024px;
 }
 
 * {
@@ -19,7 +19,7 @@
 
 html {
   font-family: 'Sentinel','BentonSans',sans-serif;
-  background: #EAEAEA;
+  background: #33A2AA;
   color: #333;
 }
 
@@ -30,7 +30,6 @@ content{
 
 p.content {
     padding: 0 1em;
-    width: 55ch;
     display: flex;
     margin: auto;
 }
@@ -64,13 +63,16 @@ html {
     font-size: calc(.9vw + 14px);
     /* line-height: calc(.9vw + 1em); Not working */
   }
+  p.content {
+      width: 55ch;
+  }
 }
 
 /* Maximum font-size */
 @media screen and (min-width: 1024px) {
   html {
     font-size: var(--maxfont);
-    line-height: 1.5em;
+    line-height: 1.6em;
   }
 }
 
