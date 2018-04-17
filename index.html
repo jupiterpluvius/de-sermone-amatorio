@@ -5,20 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
+
+:root {
+  --minfont: 16px;
+  --maxfont: 21px;
+  --minview: size;
+  --maxview: size;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Ivar Text','Tiempos Text', sans-serif;
+  font-family: 'Tiempos Text','BentonSans',sans-serif;
   background: #EAEAEA;
   color: #333;
 }
 
-content {
+content{
+  margin:50px;
+  display: block;
+}
+
+p.content {
     padding: 0 1em;
-    width: 50%;
-    display: block;
+    width: 50ch;
+    display: flex;
     margin: auto;
 }
 pre {
@@ -41,22 +54,22 @@ td, th {
 
 /* Smallest possible font-size */
 html {
-  font-size: 14px;
-  line-height: 1.25em;
+  font-size: var(--minfont);
+  line-height: 1.4em;
 }
 
 /* Font-size between 320 and 1024 */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   html {
     font-size: calc(.9vw + 14px);
-    line-height: calc(.9vw + 1em); /* Not working */
+    /* line-height: calc(.9vw + 1em); Not working */
   }
 }
 
 /* Maximum font-size */
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 24px;
+    font-size: var(--maxfont);
     line-height: 1.5em;
   }
 }
@@ -85,8 +98,8 @@ h1, h2, h3, h4, h5 {
 
 <body>
     <content>
-        <h1>Pichon, <i>de sermone amatorio</i>, (1902)</h1>
-        <p>Lorem, ipsum dolor sit amet adipisicing elit. Tenetur dignissimos, voluptatibus rem nostrum, amet quod inventore vel incidunt ipsa exercitationem, totam est sint temporibus ducimus magnam. Ad dicta, est qui tenetur, minus debitis perspiciatis aliquid reprehenderit corrupti eveniet cupiditate repellendus officia itaque nihil inventore. Esse placeat nostrum sunt! Ea dolore voluptas beatae minus fugiat, reprehenderit ducimus est atque velit inventore at, maiores sapiente cum nemo, hic nulla aperiam debitis earum. Nesciunt iste impedit dolores hic ex cupiditate facere est vero nulla tempore in, accusamus possimus aliquam perferendis repudiandae quod earum voluptates, vitae quibusdam quis veniam maiores debitis quos. Iure, odit nisi distinctio qui optio, consequatur, obcaecati voluptate neque quisquam accusamus suscipit hic earum enim cumque! Temporibus dolorem odit aspernatur saepe suscipit cupiditate quos ex voluptas labore voluptate totam sint, voluptatibus dolore quibusdam at quae ullam repellat voluptatem impedit earum debitis nostrum distinctio. Saepe autem sint beatae. Autem voluptatibus nostrum obcaecati, officiis ea quidem. Eum, pariatur animi doloremque aperiam cumque corporis quo eveniet eaque in consequatur saepe ipsa similique eius accusantium excepturi exercitationem facere! Ut, nulla eos maiores explicabo natus vel tempore deleniti rem, consequuntur dolores accusantium consequatur inventore totam consectetur praesentium tempora voluptate, facere officiis aperiam! Illum.</p>
+        <h1>Pichon, <i>de sermone amatorio</i> (1902)</h1>
+        <p class="content">Lorem, ipsum dolor āēīōūȳ sit amet adipisicing elit. Tenetur dignissimos, voluptatibus rem nostrum, amet quod inventore vel incidunt ipsa exercitationem, totam est sint temporibus ducimus magnam. Ad dicta, est qui tenetur, minus debitis perspiciatis aliquid reprehenderit corrupti eveniet cupiditate repellendus officia itaque nihil inventore. Esse placeat nostrum sunt! Ea dolore voluptas beatae minus fugiat, reprehenderit ducimus est atque velit inventore at, maiores sapiente cum nemo, hic nulla aperiam debitis earum. Nesciunt iste impedit dolores hic ex cupiditate facere est vero nulla tempore in, accusamus possimus aliquam perferendis repudiandae quod earum voluptates, vitae quibusdam quis veniam maiores debitis quos. Iure, odit nisi distinctio qui optio, consequatur, obcaecati voluptate neque quisquam accusamus suscipit hic earum enim cumque! Temporibus dolorem odit aspernatur saepe suscipit cupiditate quos ex voluptas labore voluptate totam sint, voluptatibus dolore quibusdam at quae ullam repellat voluptatem impedit earum debitis nostrum distinctio. Saepe autem sint beatae. Autem voluptatibus nostrum obcaecati, officiis ea quidem. Eum, pariatur animi doloremque aperiam cumque corporis quo eveniet eaque in consequatur saepe ipsa similique eius accusantium excepturi exercitationem facere! Ut, nulla eos maiores explicabo natus vel tempore deleniti rem, consequuntur dolores accusantium consequatur inventore totam consectetur praesentium tempora voluptate, facere officiis aperiam! Illum.</p>
     </content>
 </body>
 </html>
