@@ -1,0 +1,25 @@
+[
+{
+    "entry": {
+        "headword": "",
+        "definitionset": {
+            "definition": "",
+            "translation": "",
+            "citationset": {
+                "citations": {"@@",},
+                "confers": {"@@",}
+            }
+        }  
+    }
+}
+]
+
+
+
+entry   ,
+    headword
+    definition  ,
+        definitionlat
+        definitioneng
+        citationset
+            citation    ,
